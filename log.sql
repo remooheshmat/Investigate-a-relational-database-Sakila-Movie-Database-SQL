@@ -35,7 +35,7 @@ Finally, provide a table with the family-friendly film category, each of the qua
 
 SELECT category_name, standard_quartile, COUNT(*)
 FROM 
-    (SELECT f.title AS film_title, c.name AS category_name, f.rental_duration AS rental_duration, NTILE(4) OVER (ORDER BY      f.rental_duration) AS standard_quartile
+    (SELECT f.title AS film_title, c.name AS category_name, f.rental_duration AS rental_duration, NTILE(4) OVER (ORDER BY f.rental_duration) AS standard_quartile
      FROM film f
      JOIN film_category fc
      ON f.film_id = fc.film_id
