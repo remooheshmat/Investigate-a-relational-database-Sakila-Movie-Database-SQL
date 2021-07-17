@@ -1,6 +1,6 @@
-Question Set 1: 
-Question 1
-Create a query that lists each movie, the film category it is classified in, and the number of times it has been rented out.
+##Question Set 1: 
+##Question 1
+##Create a query that lists each movie, the film category it is classified in, and the number of times it has been rented out.
 
 SELECT f.title AS film_title, c.name AS category_name, COUNT (*) AS rental_count
 FROM film f
